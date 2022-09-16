@@ -1,22 +1,23 @@
-/* for borders, use this format!!!: border: dashed 3px #ffffff; */
- body {
+body {
+    background-color: #000000;
     font-family: Arial, "Verdana";
-    background-color: #0D0D0D;
     color: #ffffff;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;    
+    margin: 20px 20px 0px 20px;
 }
 
 h1 {
     text-align: center;
     font-size: 42px;
     padding: 15px;
-    /* color: #ffffff; */
     color: #C4C4C4;
-    /* font: 42px #C4C4C4; */
 }
-/* prob do h1 p {} in order to style this correctly */
+
+div {
+    height:auto;
+    min-height: 125px;
+    padding: 20px;
+    border: 3px solid #ffffff;
+}
 
 h2 {
     font-size: 30px;
@@ -38,100 +39,78 @@ img {
     border: dashed 10px #ffffff;
 }
 
-div {
-    height:auto;
-    min-height: 125px;
-    padding: 20px;
-    /* border: 3px solid #ffffff; */
-}
-/* 
-div p {
-    color: #ffffff;
-} */
-
-div.introduction {
-    border-radius: 15px;
-    margin-top: 15px;
-    line-height: 2;
-    border: solid 3px #ffffff;
-    /* text color is white in p element*/
-}
-
-div.introduction p {
-    color: #ffffff;
-}
-
-div.red {
-    background-color: #ff0000;
-    text-align: right;
-    margin-left: 50px;
-    border-bottom: 2px solid #ffffff;
-    border-left: 5px solid #ffffff;
-    /* h2 text is black, p text is white */
-}
-
-div.red h2 {
-    color: #000000;
-}
-
-div.red p {
-    color: #ffffff;
-}
-
-div.blue {
-    background-color: #0000ff;
-    text-align: left;
-    margin-right: 50px;
-    border-right: 5px solid #ffffff;
-    border-top: 2px solid #ffffff;
-    /* blue is standard h2 color, p is also standard h2 color */
-}
-
-div.blue p {
-    color: #C4C4C4;
-}
-
-div.yellow {
-    background-color: #ffff00;
-    text-align: right;
-    margin-left: 50px;
-    border-bottom: 2px solid #ffffff;
-    border-left: 5px solid #ffffff;
-    /* h2 is black, don't change p color*/
-}
-
-div.yellow h2 {
-    color: #000000;
-}
-
-div.green {
-    background-color: #008500;
-    text-align: left;
-    margin-right: 50px;
-    border-right: 5px solid #ffffff;
-    border-top: 2px solid #ffffff;
-    /* h2 text is black, p text is white */
-}
-
-div.green h2 {
-    color: #000000;
-}
-
-div.green p {
-    color: #ffffff;
-}
-
 footer {
     border: 5px solid #ffffff;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,255,1) 25%, rgba(0,102,255,1) 70%, rgba(0,0,0,1) 100%);
 }
 
+.introduction {
+    border-radius: 15px;
+    margin-top: 15px;
+    line-height: 2;
+    border: solid 3px #ffffff;
+}
+
+.red {
+    background-color: #ff0000;
+    text-align: right;
+    margin-left: 50px;
+    border-width: 0px 0px 2px 5px;
+}
+
+.blue {
+    background-color: #0000ff;
+    text-align: left;
+    margin-right: 50px;
+    border-width: 2px 5px 0px 0px;
+}
+
+.yellow {
+    background-color: #ffff00;
+    text-align: right;
+    margin-left: 50px;
+    border-width: 0px 0px 2px 5px;
+}
+
+.green {
+    background-color: #008500;
+    text-align: left;
+    margin-right: 50px;
+    border-width: 2px 5px 0px 0px;
+}
+
 footer p {
     font-size: 20px;
     text-align: right;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    padding: 15px 15px 15px 0px;
     color: #ffffff;
+}
+
+.green h2 {
+    color: #000000;
+}
+
+.green p {
+    color: #ffffff;
+}
+
+.introduction p {
+    color: #ffffff;
+}
+
+.red h2 {
+    color: #000000;
+}
+
+.red p {
+    color: #ffffff;
+}
+
+.blue p {
+    color: #C4C4C4;
+}
+
+.yellow h2 {
+    color: #000000;
 }
